@@ -19,11 +19,8 @@ The app uses the YouTube Android Player API. You can get all the information abo
 <img src=https://github.com/Rafagf/HealthTube/blob/master/res/raw/snapshot2.png?raw=true height = 500>
 <img src=https://github.com/Rafagf/HealthTube/blob/master/res/raw/snapshot3.png?raw=true height = 500>
 
-<img src=https://github.com/Rafagf/HealthTube/blob/master/res/raw/snapshot4.png?raw=true height = 500>
 <img src=https://github.com/Rafagf/HealthTube/blob/master/res/raw/snapshot5.png?raw=true height = 500>
-
 <img src=https://github.com/Rafagf/HealthTube/blob/master/res/raw/snapshot6.png?raw=true height = 500>
-<img src=https://github.com/Rafagf/HealthTube/blob/master/res/raw/snapshot7.png?raw=true height = 500>
 
 <img src=https://github.com/Rafagf/HealthTube/blob/master/res/raw/snapshot8.png?raw=true height = 500>
 <img src=https://github.com/Rafagf/HealthTube/blob/master/res/raw/snapshot10.png?raw=true height = 500>
