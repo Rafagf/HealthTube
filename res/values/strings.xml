@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HealthTube</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <color name="Blanco">#F3F9F8</color>
+    <color name="Marino">#0CE4C3</color>
+    <color name="VerdeMarino">#0CE4C3</color>
+    <color name="AzulOscuro">#1313F1</color>
+    <color name="Negro">#424242</color>
+    <color name="Gris">#D8D8D8</color>
+    <string name="DescriptionImage">Description of an Image</string>
+    <string name="largeText">Large Text</string>
+    <string name="smallText">Small Text</string>
+    <string name="title">Recommended Exercises</string>
+    <string name="search">Search/Update</string>
+    <string name="selectRehab">What is your problem?</string>
+    <string name="knee">Knee</string>
+    <string name="back">Back</string>
+    <string name="fasciitis">Fascia</string>
+    <string name="ankle">Ankle</string>
+    
+
+</resources>

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blanco"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/cabecera" />
+    
+  	<TextView
+  	    android:id="@+id/textView1"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_alignLeft="@+id/header"
+  	    android:layout_alignRight="@id/header"
+  	    android:layout_below="@+id/header"
+  	    android:layout_marginTop="20dp"
+  	    android:fontFamily="sans-serif-light"
+  	    android:gravity="center"
+  	    android:text="@string/selectRehab"
+  	    android:textSize="22sp"
+  	    android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/header"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="85dp"
+        android:background="@color/Marino"
+        android:fontFamily="sans-serif-light"
+        android:minHeight="100dip"
+        android:minWidth="130dip"
+        android:text="@string/back"
+        android:textStyle="bold" />
+
+  	<Button
+  	    android:id="@+id/kneeButton"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_alignRight="@+id/header"
+  	    android:layout_below="@+id/header"
+  	    android:layout_marginTop="85dp"
+  	    android:background="@color/VerdeMarino"
+  	    android:fontFamily="sans-serif-light"
+  	    android:minHeight="100dip"
+  	    android:minWidth="130dip"
+  	    android:text="@string/knee"
+  	    android:textStyle="bold" />
+  	
+  	<Button
+  	    android:id="@+id/fasciitisButton"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_alignLeft="@+id/header"
+  	    android:layout_alignRight="@+id/backButton"
+  	    android:layout_below="@+id/header"
+  	    android:layout_marginTop="225dp"
+  	    android:background="@color/VerdeMarino"
+  	    android:fontFamily="sans-serif-light"
+  	    android:minHeight="100dip"
+  	    android:minWidth="130dip"
+  	    android:text="@string/fasciitis"
+  	    android:textStyle="bold" />
+  	
+  	<Button
+  	    android:id="@+id/ankleButton"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_alignRight="@+id/header"
+  	    android:layout_below="@+id/header"
+  	    android:layout_marginTop="225dp"
+  	    android:background="@color/Marino"
+  	    android:fontFamily="sans-serif-light"
+  	    android:minHeight="100dip"
+  	    android:minWidth="130dip"
+  	    android:text="@string/ankle"
+  	    android:textStyle="bold" />
+        
+</RelativeLayout>
