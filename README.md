@@ -1,7 +1,7 @@
 HealthTube
 ========================
 
-Source code of an Android health and wellness application. This application offers five videos channels, which provide users guidelines to keep healthy habits or help for rehabilitation purposes. 
+Source code of an Android health and wellness application. This application offers five videos channels, which provide users guidelines to keep healthy habits or help for rehabilitation purposes. It can be downloaded and installed in the following link: https://play.google.com/store/apps/details?id=com.healthtube
 
 This application shows how to populate ListViews with YouTube videos (belonging to existing playlists on my YouTube channel). It was developed to its functionality be incorporated to the mHealthDroid framework (https://github.com/mHealthDroid/mHealthDroid), which offers this functionality in a really easy way abstracting implementation complexities to the developer. 
 
