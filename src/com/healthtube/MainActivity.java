@@ -1,4 +1,4 @@
-package com.example.healthtube;
+package com.healthtube;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.healthtube.R;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -46,6 +47,7 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 	String idPlayList;
 	ListView videosListView;
 	YouTubePlayerView youtubePlayerView; 
+	YouTubePlayer playa;
 	ImageView thumb;
 	String URL_VIDEO;
 	String keyaux1 = "AIzaSyBI";
@@ -75,6 +77,8 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 		new Thread(new GetYouTubeUserVideosTask(responseHandler, idPlayList)).start();
 		
 		youtubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_view);
+		youtubePlayerView.initialize(KEY_DEVELOPER, this);
+		playa = null;
 		videosListView = (ListView) findViewById(R.id.listListView);
 		listExtendButton =  (ToggleButton) findViewById(R.id.listExtendButton);
 		
@@ -205,32 +209,9 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 				
 				Video chosen = (Video)pariente.getItemAtPosition(posicion);	
 				String urlVideo = chosen.getUrl();
-				
-				
 				String aux = getYoutubeVideoId(urlVideo);
 				URL_VIDEO = aux;
-				
-		        youtubePlayerView.initialize(KEY_DEVELOPER, new YouTubePlayer.OnInitializedListener() {
-		        
-					@Override
-					public void onInitializationFailure(Provider arg0,
-							YouTubeInitializationResult arg1) {
-						// TODO Auto-generated method stub
-						Log.d("ERROR DISPLAYING VIDEO", URL_VIDEO);
-						
-					}
-
-					@Override
-					public void onInitializationSuccess(Provider arg0,
-							YouTubePlayer player, boolean wasRestored) {
-						
-						// TODO Auto-generated method stub
-						if(!wasRestored){		
-							Log.d("YOUTUBE", "URL: " + URL_VIDEO);
-							player.cueVideo(URL_VIDEO);
-						}
-					}
-				});
+				playa.cueVideo(URL_VIDEO);
 			}
 		});	    
 	}
@@ -302,14 +283,15 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 	@Override
 	public void onInitializationFailure(Provider arg0,
 			YouTubeInitializationResult arg1) {
-		// TODO Auto-generated method stub
-		
+
+		Toast.makeText(getApplicationContext(), "Oh dear, something terrible happened, sorry!", Toast.LENGTH_SHORT).show();
 	}
 
 	@Override
-	public void onInitializationSuccess(Provider arg0, YouTubePlayer arg1,
-			boolean arg2) {
+	public void onInitializationSuccess(Provider provider, YouTubePlayer player,
+			boolean wasRestored) {
 		// TODO Auto-generated method stub
-		
+		playa = player;
+		playa.setPlayerStyle(YouTubePlayer.PlayerStyle.MINIMAL);
 	}
 }

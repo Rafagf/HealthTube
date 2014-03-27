@@ -1,4 +1,4 @@
-package com.example.healthtube;
+package com.healthtube;
 
 import java.io.Serializable;
 
