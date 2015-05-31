@@ -33,7 +33,7 @@ There was a bug on the APP. The player only was able to load the first video, no
 <img src=https://github.com/Rafagf/HealthTube/blob/master/res/raw/snapshot8.png?raw=true height = 500>
 <img src=https://github.com/Rafagf/HealthTube/blob/master/res/raw/snapshot10.png?raw=true height = 500>
 
-## Autor
+## Author
 
 Rafael García Fernández
 
